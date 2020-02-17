@@ -89,9 +89,8 @@ body {
   display: block;
   /*max-width:230px;
   max-height:95px; */
-  width: auto;
+  width: 100%;
   height: auto;
-  padding-right:100%;
 }
 
 form {
