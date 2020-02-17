@@ -72,15 +72,15 @@
     <h3>2014</h3>
     <p>Stage presso Arpa ( agenzia regionale protezione dell'ambiente) di Monza.</p>
     <hr>
-    <form class="commento" method="POST" action="contact.php">
+    <form method="post" action="contact.php">
       <label for="fname">Nome</label>
-      <input type="text" id="fname" name="name" placeholder="es Mario..">
-      <label for="lname">Cognome</label>
-      <input type="text" id="lname" name="lastname" placeholder="es Rossi..">
+      <input type="text"  name="first_name" placeholder="es Mario..">
+      <<!--<label for="lname">Cognome</label>
+      <input type="text"  name="lastname" placeholder="es Rossi.."> -->
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="es.@gmail.com">
+      <input type="email"  name="email_address" placeholder="es.@gmail.com">
       <label for="subject">Oggetto</label>
-      <textarea id="message" name="message" placeholder="Scrivi qualcosa.." style="height:170px"></textarea>
+      <textarea  name="comments" placeholder="Scrivi qualcosa.." style="height:170px"></textarea>
       <input type="submit" value="Invia">
     </form>
   </div>
