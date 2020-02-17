@@ -88,6 +88,7 @@ body {
   overflow: hidden;
   padding: 10px;
   background-color: #aaa;
+  object-fit: cover;
   /*max-width:230px;
   max-height:95px; */
 
