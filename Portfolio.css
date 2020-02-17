@@ -82,15 +82,15 @@ body {
 }
 
 .img {
-  background-color: #aaa;
+  display: block;
+  width: 100%;
+  height: auto; 
   overflow: hidden;
   padding: 10px;
-  min-width:100%;
-  display: block;
+  background-color: #aaa;
   /*max-width:230px;
   max-height:95px; */
-  width: 100%;
-  height: auto;
+
 }
 
 form {
