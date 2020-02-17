@@ -72,17 +72,13 @@
     <h3>2014</h3>
     <p>Stage presso Arpa ( agenzia regionale protezione dell'ambiente) di Monza.</p>
     <hr>
-    <form class="commento">
+    <form class="commento" method="POST" action="mailto:Lucagao11@gmail.com" enctype="text/plain">
       <label for="fname">Nome</label>
       <input type="text" id="fname" name="firstname" placeholder="es Mario..">
       <label for="lname">Cognome</label>
       <input type="text" id="lname" name="lastname" placeholder="es Rossi..">
-      <label for="country">Nazione</label>
-      <select id="country" name="country">
-        <option value="australia">Italia</option>
-        <option value="canada">Regno Unito</option>
-        <option value="usa">Francia</option>
-      </select>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="es.@gmail.com">
       <label for="subject">Oggetto</label>
       <textarea id="subject" name="subject" placeholder="Scrivi qualcosa.." style="height:170px"></textarea>
       <input type="submit" value="Invia">
