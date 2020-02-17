@@ -88,6 +88,8 @@ body {
   overflow: hidden;
   padding: 10px;
   min-width:100%;
+  max-width: 150px;
+  max-height: 100px;
 }
 
 form {
