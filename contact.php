@@ -1,16 +1,27 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (!isset($_POST['submit'])) {
+  echo "error; you need to submit the form!";
+}
 $name = $_POST['name'];
-$subject = $_POST['subject'];
-$mailFrom = $_POST['mail'];
+$visitor_email = $_POST['mail'];
 $message = $_POST['message'];
 
-$mailTo = "gao20@hotmail.it";
-$headers = "From: ".$mailFrom;
-$txt = "You have received an e-mail from ".$name.".\n\n".$message;
-
-mail($mailTo, $subject, $txt, $headers);
+if(empty($name)||empty($visitor_email))
+{
+  echo"Name and email are mandatory!";
+  exit;
 }
+
+$email_from ="gao20@hotmail.it";
+$email_subject ="New form submission";
+$email_body ="You have receveid a new message from the user $name. \n".
+              "email address: $visitor_email\n".
+              "Here is the message: $message\n".
+
+$to = "gao20@hotmail.it";
+$headers = "From: $email_from \r\n";
+
+mail($to, $mail_subject, $email_body, $headers);
 
 ?>
