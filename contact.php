@@ -6,12 +6,11 @@ $subject = $_POST['subject'];
 $mailFrom = $_POST['mail'];
 $message = $_POST['message'];
 
-$mailTo = "Lucagao11@gmail.com";
+$mailTo = "gao20@hotmail.it";
 $headers = "From: ".$mailFrom;
 $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
 mail($mailTo, $subject, $txt, $headers);
-header("Location: Portfolio.html?mailsend");
 }
 
 ?>
