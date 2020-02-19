@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ringraziare.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="scene">
+      <h1>Thank you for your comment!</h1>
+      <div class="magic"></div>
+      <p class="check-out">Check out my other <a href="https://lucagao.github.io/lucagao/Portfolio.html" target="_blank">Works</a></p>
+    </div>
+  <script>
+    $(document).ready(function() {
+      var $magic = $(".magic"),
+          magicWHalf = $magic.width() / 2;
+      $(document).on("mousemove", function(e) {
+        $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
+      });
+    });
+  </script>
+  </body>
+</html>
