@@ -10,15 +10,15 @@
 <body>
 <!-- commento aggiunto-->
 <div class="header">
+  <a href="#back_to_top"></a>
   <h1>Gao Luca</h1>
   <p>A website created by me.</p>
 </div>
 
 <div class="navbar">
-  <a href="#">Informazioni personali</a>
-  <a href="#">Messaggi</a>
+  <a href="#esperienze">Informazioni personali</a>
+  <a href="#informazioni">Recapiti</a>
   <a href="#commento">Contatti</a>
-  <a href="#" class="right">Link</a>
 </div>
 
 <div class="row">
@@ -39,10 +39,10 @@
     </ul>
     <h3>OBIETTIVI</h3>
     <p>Mettere in pratica le capacità acquisite nel tempo per dare supporto all'azienda in modo dafavorirne lo svliluppo aziendale oltre a un accrescimento personale.</p>
-    <div class="recapito">
+    <div  class="recapito">
     <h3>RECAPITI</h3>
       <h3>
-    <img src="https://www.bit4law.com/wp-content/uploads/2019/01/acquisizione-forense-email.png" class="email" alt="email" width="40px"
+    <img id="informazioni" src="https://www.bit4law.com/wp-content/uploads/2019/01/acquisizione-forense-email.png" class="email" alt="email" width="40px"
       height="40px" border="0"> &nbsp; &nbsp;
       Gao20@hotmail.it
     </h3>
@@ -64,7 +64,7 @@
     <h2>Esperienze professionali</h2>
     <h5></h5>
     <img src="image2.jpg" alt="progetto" class="img" style="height:200px;">
-    <h3>2018-2019</h3>
+    <h3 id="esperienze">2018-2019</h3>
     <p>Esperienza alberghiera come receptionist e assistente presso Hotel Boston in zona Centrale a Milano.</p>
     <h3>2017-2018</h3>
     <p>Esperienza come assistente sushi presso Sushidaily.</p>
@@ -73,7 +73,7 @@
     <h3>2014</h3>
     <p>Stage presso Arpa ( agenzia regionale protezione dell'ambiente) di Monza.</p>
     <hr>
-    <form action="https://formspree.io/xjvrbvgn" method="POST" enctype="multipart/form-data">
+    <form id="commento" action="https://formspree.io/xjvrbvgn" method="POST" enctype="multipart/form-data">
       <label for="fname">Nome</label>
       <input type="text"  name="name" placeholder="es Mario..">
       <!--<label for="lname">Cognome</label>
@@ -100,6 +100,28 @@
 <h5> <pre>     ©2020 LUCA GAO | TUTTI I DIRITTI RISERVATI</pre></h5>
 </footer>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.seekpng.com/png/detail/246-2465153_chevron-up-filled-icon-back-to-top-arrow.png" style="height:50px"></button>
+<script type="text/javascript">
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
