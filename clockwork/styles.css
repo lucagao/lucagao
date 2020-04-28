@@ -50,7 +50,7 @@ input:disabled {
 
 button {
     padding: 12px 62px;
-    background-color: #222;
+    background-color: black;
     color: white;
     border: none;
     outline: none;
@@ -72,20 +72,3 @@ h2 {
     margin: 12px 0;
     padding-left: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
