@@ -4,7 +4,7 @@ body, button, input {
 }
 
 body {
-    margin: 72px 140px 0;
+    margin: 72px 100px 0;
 }
 
 h1 {
@@ -34,7 +34,7 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 40%;
     font-size: 30px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .5);
@@ -49,7 +49,7 @@ input:disabled {
 }
 
 button {
-    padding: 12px 62px;
+    padding: 12px 42px;
     background-color: black;
     color: white;
     border: none;
@@ -72,10 +72,15 @@ h2 {
     margin: 12px 0;
     padding-left: 100px;
 }
-@media screen and (max-width: 1060px) {
+
+@media only screen and (min-width: 992px) {
     section, h2 { width:67%; }
+    h2 { padding-left: 50px; font-size: 80px; }
+    button {padding: 12px 30px;}
+    
 }
 
-@media screen and (max-width: 768px) {
-    section, h2 { width:100%; }
+@media only screen and (min-width: 768px) {
+    section, h2 { width:10%; }
 }
+@media (min-width: 600px)
