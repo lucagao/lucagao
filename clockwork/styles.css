@@ -72,3 +72,10 @@ h2 {
     margin: 12px 0;
     padding-left: 100px;
 }
+@media screen and (max-width: 1060px) {
+    section, h2 { width:67%; }
+}
+
+@media screen and (max-width: 768px) {
+    section, h2 { width:100%; }
+}
