@@ -14,10 +14,10 @@ h1 {
 
 #controls {
     display: inline-block;
-    width: 46%;
+    width: 36%;
     border-right: 1px solid rgba(0, 0, 0, .5);
     padding-bottom: 42px;
-    padding-right: 42px;
+    padding-right: 32px;
 }
 
 
@@ -73,14 +73,22 @@ h2 {
     padding-left: 100px;
 }
 
-@media only screen and (min-width: 992px) {
-    section, h2 { width:67%; }
-    h2 { padding-left: 50px; font-size: 80px; }
+@media only screen and (min-width: 1400px) {
     button {padding: 12px 30px;}
+    h2 { font-size: 80px;}
     
 }
 
-@media only screen and (min-width: 768px) {
-    section, h2 { width:10%; }
+@media only screen and (max-width: 1400px) {
+    h2 { font-size: 80px;}
+    input { width: 100%; font-size: 20px;}
+    #controls { width: 100%; border-right: none; }
 }
-@media (min-width: 600px)
+@media (max-width: 600px) {
+    h2 { font-size: 60px; padding-left: none; width: 100%;}
+    button { width: 100%;}
+    input { width: 100%; font-size: 20px;}
+    #controls { width: 100%; border-right: none; }
+
+}
+	
